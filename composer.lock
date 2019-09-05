@@ -305,16 +305,16 @@
         },
         {
             "name": "twilio/sdk",
-            "version": "5.21.3",
+            "version": "5.35.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twilio/twilio-php.git",
-                "reference": "b87bde9642a34da9f2ce0417e1aaf572bfd2aec0"
+                "reference": "a0e74651cdfba6dda780084e3dfc83002c0a71f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/b87bde9642a34da9f2ce0417e1aaf572bfd2aec0",
-                "reference": "b87bde9642a34da9f2ce0417e1aaf572bfd2aec0",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/a0e74651cdfba6dda780084e3dfc83002c0a71f2",
+                "reference": "a0e74651cdfba6dda780084e3dfc83002c0a71f2",
                 "shasum": ""
             },
             "require": {
@@ -322,7 +322,11 @@
             },
             "require-dev": {
                 "apigen/apigen": "^4.1",
+                "guzzlehttp/guzzle": "^6.3",
                 "phpunit/phpunit": "4.5.*"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "An HTTP client to execute the API requests"
             },
             "type": "library",
             "autoload": {
@@ -347,7 +351,7 @@
                 "sms",
                 "twilio"
             ],
-            "time": "2018-08-23T18:50:56+00:00"
+            "time": "2019-09-04T23:10:35+00:00"
         }
     ],
     "packages-dev": [],
