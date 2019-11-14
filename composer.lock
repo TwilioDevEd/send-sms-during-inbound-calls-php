@@ -305,16 +305,16 @@
         },
         {
             "name": "twilio/sdk",
-            "version": "5.21.3",
+            "version": "5.39.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twilio/twilio-php.git",
-                "reference": "b87bde9642a34da9f2ce0417e1aaf572bfd2aec0"
+                "reference": "71432b4b4962cbed2fa01a8cf836ae5cea35e6f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/b87bde9642a34da9f2ce0417e1aaf572bfd2aec0",
-                "reference": "b87bde9642a34da9f2ce0417e1aaf572bfd2aec0",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/71432b4b4962cbed2fa01a8cf836ae5cea35e6f3",
+                "reference": "71432b4b4962cbed2fa01a8cf836ae5cea35e6f3",
                 "shasum": ""
             },
             "require": {
@@ -322,12 +322,16 @@
             },
             "require-dev": {
                 "apigen/apigen": "^4.1",
-                "phpunit/phpunit": "4.5.*"
+                "guzzlehttp/guzzle": "^6.3",
+                "phpunit/phpunit": ">=4.5"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "An HTTP client to execute the API requests"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Twilio\\": "Twilio/"
+                    "Twilio\\": "src/Twilio/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -347,7 +351,7 @@
                 "sms",
                 "twilio"
             ],
-            "time": "2018-08-23T18:50:56+00:00"
+            "time": "2019-11-13T20:23:23+00:00"
         }
     ],
     "packages-dev": [],
