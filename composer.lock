@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4dbcd31d4d8fd74339db111b7ead9ca",
+    "content-hash": "a887e2b6bc6bc6048be9389a7d40162f",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -35,6 +35,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -305,29 +306,33 @@
         },
         {
             "name": "twilio/sdk",
-            "version": "5.21.3",
+            "version": "6.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twilio/twilio-php.git",
-                "reference": "b87bde9642a34da9f2ce0417e1aaf572bfd2aec0"
+                "reference": "eba44af458c63227acc9a2449f21733a6f72ce86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/b87bde9642a34da9f2ce0417e1aaf572bfd2aec0",
-                "reference": "b87bde9642a34da9f2ce0417e1aaf572bfd2aec0",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/eba44af458c63227acc9a2449f21733a6f72ce86",
+                "reference": "eba44af458c63227acc9a2449f21733a6f72ce86",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=7.1.0"
             },
             "require-dev": {
-                "apigen/apigen": "^4.1",
-                "phpunit/phpunit": "4.5.*"
+                "guzzlehttp/guzzle": "^6.3",
+                "phpunit/phpunit": ">=4.5",
+                "theseer/phpdox": "^0.12.0"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "An HTTP client to execute the API requests"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Twilio\\": "Twilio/"
+                    "Twilio\\": "src/Twilio/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -347,7 +352,7 @@
                 "sms",
                 "twilio"
             ],
-            "time": "2018-08-23T18:50:56+00:00"
+            "time": "2020-05-27T19:28:33+00:00"
         }
     ],
     "packages-dev": [],
