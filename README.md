@@ -75,7 +75,7 @@ After the above requirements have been met:
 > [Learn 6 awesome reasons why to use ngrok](https://www.twilio.com/blog/2015/09/6-awesome-reasons-to-use-ngrok-when-testing-webhooks.html).
 
     ```bash
-    ngrok http 8080 -host-header="localhost:8080"
+    ngrok http 8000 -host-header="localhost:8000"
     ```
 
 1. Configure Twilio to call your webhooks
@@ -87,6 +87,15 @@ After the above requirements have been met:
   ```
 
   That's it!
+
+### Docker
+
+If you have [Docker](https://www.docker.com/) already installed on your machine, you can use our `docker-compose.yml` to setup your project.
+
+1. Make sure you have the project cloned.
+2. Setup the `.env` file as outlined in the [Local Development](#local-development) steps.
+3. Run `docker-compose up`.
+4. Follow the steps in [Local Development](#local-development) on how to expose your port to Twilio using a tool like [ngrok](https://ngrok.com/) and configure the remaining parts of your application.
 
 ### Unit and Integration Tests
 
